@@ -1,26 +1,28 @@
 const products = [
-    { id: 1, name: "Astral Gold", category: "Premium" },
-    { id: 2, name: "Ocean Diver", category: "Sport" },
-    { id: 3, name: "Urban Minimal", category: "Casual" },
-    { id: 4, name: "Heritage Silver", category: "Clásico" },
-    { id: 5, name: "Leather Strap Pro", category: "Accesorios" },
-    { id: 6, name: "Skyline Chrono", category: "Premium" },
-    { id: 7, name: "Neon Sport", category: "Sport" },
-    { id: 8, name: "Daily Driver", category: "Casual" },
-    { id: 9, name: "Vintage 1960", category: "Clásico" },
-    { id: 10, name: "Link Bracelet", category: "Accesorios" },
-    { id: 11, name: "Diamond Peak", category: "Premium" },
-    { id: 12, name: "Active Run", category: "Sport" },
-    { id: 13, name: "Simple White", category: "Casual" },
-    { id: 14, name: "Formal Black", category: "Clásico" },
-    { id: 15, name: "Box Set Luxury", category: "Accesorios" },
-    { id: 16, name: "Titanium Force", category: "Premium" },
-    { id: 17, name: "Deep Sea", category: "Sport" },
-    { id: 18, name: "Street Style", category: "Casual" },
-    { id: 19, name: "Executive Suite", category: "Clásico" },
-    { id: 20, name: "Nylon NATO Strap", category: "Accesorios" },
-    { id: 21, name: "Galaxy Dial", category: "Premium" },
-    { id: 22, name: "Racer X", category: "Sport" }
+    { id: 1, name: "Billetera Marrón", category: "Accesorios", description: "Billetera de cuero genuino con acabados artesanales. Espacio para múltiples tarjetas y diseño ultra delgado." },
+    { id: 2, name: "Brazalete vintage", category: "Accesorios", description: "Brazalete de cuero trenzado con detalles metálicos envejecidos. El complemento ideal para un look casual y sofisticado." },
+    { id: 3, name: "Naviforce N2", category: "Sport", description: "Reloj deportivo de alta resistencia con cronógrafo y luz LED. Diseñado para resistir las condiciones más extremas." },
+    { id: 4, name: "Naviforce Plus", category: "Premium", description: "Elegancia y precisión en un solo diseño. Movimiento japonés y cristal mineral resistente a rayaduras." },
+    { id: 5, name: "Naviforce Sport 2", category: "Sport", description: "Versión mejorada de nuestro clásico deportivo. Más ligero, más resistente y con un diseño aerodinámico." },
+    { id: 6, name: "Naviforce Lux Plus", category: "Premium", description: "La máxima expresión del lujo. Detalles dorados y correa de acero inoxidable de alta calidad." },
+    { id: 7, name: "Naviforce Gold", category: "Premium", description: "Un reloj que destaca por sí solo. Acabado en oro de 18k electrochapado para una durabilidad excepcional." },
+    { id: 8, name: "Naviforce Plata", category: "Clásico", description: "La sobriedad de la plata combinada con la tecnología Naviforce. Perfecto para ocasiones formales." },
+    { id: 9, name: "Naviforce Lux", category: "Premium", description: "Diseño minimalista con materiales de primera categoría. Una pieza esencial para el coleccionista moderno." },
+    { id: 10, name: "Naviforce Ultra", category: "Premium", description: "Equipado con las últimas innovaciones en relojería. Precisión absoluta y estilo inconfundible." },
+    { id: 11, name: "Naviforce N Verde", category: "Sport", description: "Un toque de color para tu estilo activo. Dial verde esmeralda con correa de silicona premium." },
+    { id: 12, name: "Naviforce N Azúl", category: "Sport", description: "Elegancia marina en tu muñeca. Resistente al agua y con detalles en azul profundo." },
+    { id: 13, name: "Naviforce N Negro/Marrón", category: "Casual", description: "La combinación perfecta entre lo clásico y lo moderno. Correa de cuero marrón y dial negro mate." },
+    { id: 14, name: "Pure Noir", category: "Casual", description: "Totalmente negro. Un diseño audaz para quienes prefieren la elegancia del minimalismo extremo." },
+    { id: 15, name: "Naviforce Sport", category: "Sport", description: "El reloj que inició nuestra línea deportiva. Fiable, robusto y siempre listo para la acción." },
+    { id: 16, name: "Naviforce Sport Plus", category: "Sport", description: "Máximo rendimiento. Funciones avanzadas de cronometraje y una construcción reforzada." },
+    { id: 17, name: "Poedagar Classic", category: "Clásico", description: "Diseño atemporal inspirado en la relojería suiza. Movimiento de cuarzo de alta precisión." },
+    { id: 18, name: "Poedagar Classic Black", category: "Clásico", description: "El clásico Poedagar en una edición nocturna. Dial negro con indicadores de plata." },
+    { id: 19, name: "Poedagar Classic Blue", category: "Clásico", description: "Reflejos azules que capturan la luz. Un reloj que proyecta confianza y éxito." },
+    { id: 20, name: "Poedagar", category: "Clásico", description: "La esencia de la marca. Un equilibrio perfecto entre precio, calidad y diseño superior." },
+    { id: 21, name: "Poedagar Classic 2", category: "Clásico", description: "Evolución de un ícono. Caja más delgada y un dial renovado para un look más contemporáneo." },
+    { id: 22, name: "Poedagar Metal", category: "Clásico", description: "Construcción íntegra en acero. Un reloj pesado, robusto y con una presencia imponente." },
+    { id: 23, name: "Poedagar Metal 2", category: "Clásico", description: "Pulido a espejo para un brillo inigualable. El accesorio definitivo para eventos de gala." },
+    { id: 24, name: "Sapphero", category: "Premium", description: "Inspirado en la alta gama internacional. Cristal de zafiro y diseño ergonómico de vanguardia." }
 ];
 
 const productGrid = document.getElementById('product-grid');
@@ -37,7 +39,9 @@ function renderProducts(filteredProducts) {
 
     filteredProducts.forEach(product => {
         const card = document.createElement('div');
-        card.className = 'product-card glass-card reveal active'; // active to show immediately or use observer
+        card.className = 'product-card reveal active'; 
+        card.style.cursor = 'pointer';
+        card.onclick = () => window.location.href = `producto.html?id=${product.id}`;
         card.innerHTML = `
             <div class="image-placeholder product-image"></div>
             <div class="product-info">
