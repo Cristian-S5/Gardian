@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="product-detail-info">
             <div class="category-badge">${product.category}</div>
             <h1>${product.name}</h1>
+            <span class="product-sku">SKU: ${product.sku}</span>
             <p class="product-description">${product.description}</p>
             
             <div class="price-disclaimer">

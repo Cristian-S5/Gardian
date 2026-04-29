@@ -451,3 +451,12 @@ footer {
     width: auto;
     filter: brightness(0) invert(1);
 }
+
+.product-sku {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: block;
+}
