@@ -23,7 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render Product Detail
     detailContainer.innerHTML = `
-        <div class="product-large-image image-placeholder"></div>
+        <div class="product-gallery">
+            <div class="product-large-image" id="main-image-container">
+                ${product.images && product.images.length > 0 
+                    ? `<img src="${product.images[0]}" alt="${product.name}" id="main-product-img">` 
+                    : '<div class="image-placeholder"></div>'}
+            </div>
+            ${product.images && product.images.length > 1 ? `
+                <div class="product-thumbnails">
+                    ${product.images.map((img, index) => `
+                        <div class="thumbnail ${index === 0 ? 'active' : ''}" data-index="${index}">
+                            <img src="${img}" alt="${product.name} vista ${index + 1}">
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+        </div>
         <div class="product-detail-info">
             <div class="category-badge">${product.category}</div>
             <h1>${product.name}</h1>
@@ -50,4 +65,19 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     `;
+
+    // Slider Logic
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImg = document.getElementById('main-product-img');
+
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            const index = thumb.dataset.index;
+            mainImg.src = product.images[index];
+            
+            // Update active thumbnail
+            thumbnails.forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        });
+    });
 });

@@ -1,28 +1,146 @@
 const products = [
-    { id: 1, sku: "BT00001", name: "Billetera Marrón", category: "Accesorios", description: "Billetera simil cuero para hombre en color marrón con varios compartimentos." },
-    { id: 2, sku: "BE00003", name: "Brazalete vintage", category: "Accesorios", description: "Brazalete vintage simil cuero con enchapados" },
-    { id: 3, sku: "NF9248B", name: "Naviforce N2", category: "Sport", description: "Reloj deportivo de alta resistencia con cronógrafo y luz LED. Diseñado para resistir las condiciones más extremas." },
-    { id: 4, sku: "GB-NF-P", name: "Naviforce Plus", category: "Premium", description: "Elegancia y precisión en un solo diseño. Movimiento japonés y cristal mineral resistente a rayaduras." },
-    { id: 5, sku: "GB-NF-S2", name: "Naviforce Sport 2", category: "Sport", description: "Versión mejorada de nuestro clásico deportivo. Más ligero, más resistente y con un diseño aerodinámico." },
-    { id: 6, sku: "GB-NF-LP", name: "Naviforce Lux Plus", category: "Premium", description: "La máxima expresión del lujo. Detalles dorados y correa de acero inoxidable de alta calidad." },
-    { id: 7, sku: "GB-NF-G", name: "Naviforce Gold", category: "Premium", description: "Un reloj que destaca por sí solo. Acabado en oro de 18k electrochapado para una durabilidad excepcional." },
-    { id: 8, sku: "GB-NF-PL", name: "Naviforce Plata", category: "Clásico", description: "La sobriedad de la plata combinada con la tecnología Naviforce. Perfecto para ocasiones formales." },
-    { id: 9, sku: "GB-NF-L", name: "Naviforce Lux", category: "Premium", description: "Diseño minimalista con materiales de primera categoría. Una pieza esencial para el coleccionista moderno." },
-    { id: 10, sku: "GB-NF-U", name: "Naviforce Ultra", category: "Premium", description: "Equipado con las últimas innovaciones en relojería. Precisión absoluta y estilo inconfundible." },
-    { id: 11, sku: "GB-NF-NV", name: "Naviforce N Verde", category: "Sport", description: "Un toque de color para tu estilo activo. Dial verde esmeralda con correa de silicona premium." },
-    { id: 12, sku: "GB-NF-NA", name: "Naviforce N Azúl", category: "Sport", description: "Elegancia marina en tu muñeca. Resistente al agua y con detalles en azul profundo." },
-    { id: 13, sku: "GB-NF-NM", name: "Naviforce N Negro/Marrón", category: "Casual", description: "La combinación perfecta entre lo clásico y lo moderno. Correa de cuero marrón y dial negro mate." },
-    { id: 14, sku: "GB-PN-01", name: "Pure Noir", category: "Casual", description: "Totalmente negro. Un diseño audaz para quienes prefieren la elegancia del minimalismo extremo." },
-    { id: 15, sku: "GB-NF-S1", name: "Naviforce Sport", category: "Sport", description: "El reloj que inició nuestra línea deportiva. Fiable, robusto y siempre listo para la acción." },
-    { id: 16, sku: "GB-NF-SP", name: "Naviforce Sport Plus", category: "Sport", description: "Máximo rendimiento. Funciones avanzadas de cronometraje y una construcción reforzada." },
-    { id: 17, sku: "GB-PO-C", name: "Poedagar Classic", category: "Clásico", description: "Diseño atemporal inspirado en la relojería suiza. Movimiento de cuarzo de alta precisión." },
-    { id: 18, sku: "GB-PO-CB", name: "Poedagar Classic Black", category: "Clásico", description: "El clásico Poedagar en una edición nocturna. Dial negro con indicadores de plata." },
-    { id: 19, sku: "GB-PO-CBL", name: "Poedagar Classic Blue", category: "Clásico", description: "Reflejos azules que capturan la luz. Un reloj que proyecta confianza y éxito." },
-    { id: 20, sku: "GB-PO-01", name: "Poedagar", category: "Clásico", description: "La esencia de la marca. Un equilibrio perfecto entre precio, calidad y diseño superior." },
-    { id: 21, sku: "GB-PO-C2", name: "Poedagar Classic 2", category: "Clásico", description: "Evolución de un ícono. Caja más delgada y un dial renovado para un look más contemporáneo." },
-    { id: 22, sku: "GB-PO-M", name: "Poedagar Metal", category: "Clásico", description: "Construcción íntegra en acero. Un reloj pesado, robusto y con una presencia imponente." },
-    { id: 23, sku: "GB-PO-M2", name: "Poedagar Metal 2", category: "Clásico", description: "Pulido a espejo para un brillo inigualable. El accesorio definitivo para eventos de gala." },
-    { id: 24, sku: "GB-SA-01", name: "Sapphero", category: "Premium", description: "Inspirado en la alta gama internacional. Cristal de zafiro y diseño ergonómico de vanguardia." }
+    { id: 1, sku: "BT00001", name: "Billetera Marrón", category: "Accesorios", images: ["assets/Fotos productos/Billetera/Billetera Marrón Sin fondo.png", "assets/Fotos productos/Billetera/Captura de pantalla 2025-07-24 220205.png"], description: "Billetera simil cuero para hombre en color marrón con varios compartimentos." },
+    { id: 2, sku: "BE00003", name: "Brazalete vintage", category: "Accesorios", images: ["assets/Fotos productos/Brazalete vintage/Pulsera cuero 3.png", "assets/Fotos productos/Brazalete vintage/Pulsera de eco-cuero.png"], description: "Brazalete vintage simil cuero con enchapados" },
+    { id: 3, sku: "NF9248B", name: "Naviforce N2", category: "Sport", images: ["assets/Fotos productos/9248/Naviforce 9248.png"], description: `🚚 Envíos a todo el país
+🏅 1 año de garantía
+💳 Todos los métodos de pago
+
+Movimiento: Seiko japonés.
+Caja: aleación de zinc.
+Diámetro: 46 mm.
+Grosor: 12 mm.
+Ancho correa: 22 mm.
+Peso: 73 g.
+Cristal: vidrio mineral reforzado.
+Correa: PU.
+Cierre: hebilla de gancho.
+Características: calendario, resistente al agua 3 atm.` },
+    { id: 4, sku: "NF9197M", name: "Naviforce Plus", category: "Premium", images: ["assets/Fotos productos/9197/Naviforce 9197 cuero.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 46 mm.
+Grosor: 17 mm.
+Ancho correa: 22 mm.
+Peso: 101 g.
+Cristal: vidrio mineral reforzado.
+Correa: cuero.
+Cierre: hebilla de gancho.
+Características: calendario, análogo + pantalla luminosa, resistente al agua 3 atm.` },
+    { id: 5, sku: "NF6104K", name: "Naviforce Sport 2", category: "Sport", images: ["assets/Fotos productos/6104/Naviforce 6104 1.png"], description: `Movimiento: Seiko.
+Caja: policarbonato.
+Diámetro: 45 mm.
+Grosor: 16 mm.
+Ancho correa: 24 mm.
+Peso: 71 g.
+Cristal: vidrio mineral reforzado.
+Correa: silicona.
+Cierre: hebilla de gancho.
+Características: calendario, alarma, análogo + pantalla luminosa, resistente al agua 5 atm.` },
+    { id: 6, sku: "NF8067K", name: "Naviforce Lux Plus", category: "Premium", images: ["assets/Fotos productos/8067/Naviforce 8067.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 47 mm.
+Grosor: 17 mm.
+Ancho correa: 25 mm.
+Peso: 120 g.
+Cristal: vidrio mineral reforzado.
+Cierre: hebilla de gancho.
+Características: calendario, cronógrafo, resistente al agua 3 atm.` },
+    { id: 7, sku: "NF8051G", name: "Naviforce Gold", category: "Premium", images: ["assets/Fotos productos/8051S/Naviforce 8051S.png", "assets/Fotos productos/8051S/reloj_sin_logo.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 44 mm.
+Grosor: 13 mm.
+Ancho correa: 26 mm.
+Peso: 163 g.
+Cristal: cristal mineral reforzado.
+Correa: acero inoxidable.
+Características: calendario, cronógrafo, resistente al agua 3 atm.` },
+    { id: 8, sku: "NF8080K", name: "Naviforce Plata", category: "Clásico", images: ["assets/Fotos productos/8080/Naviforce 8080.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 44 mm.
+Grosor: 13 mm.
+Ancho correa: 26 mm.
+Peso: 163 g.
+Cristal: cristal mineral reforzado.
+Correa: acero inoxidable.
+Características: calendario, cronógrafo, resistente al agua 3 atm.` },
+    { id: 9, sku: "NF9038L", name: "Naviforce Lux", category: "Premium", images: ["assets/Fotos productos/Naviforce Lux/Naviforce Lux Sin fondo.png"], description: `Movimiento: Seiko.
+Caja: acero inoxidable.
+Diámetro: 45mm.
+Grosor: 10,5 mm.
+Longitud: 260 mm.
+Ancho correa: 24 mm.
+Peso: 73 g.
+Cristal: Hardlex.
+Correa: acero inoxidable.
+Características: calendario (fecha y día), resistente al agua 3 atm.` },
+    { id: 10, sku: "NF9208G", name: "Naviforce Ultra", category: "Premium", images: ["assets/Fotos productos/Naviforce 9208 Ultra/Naviforce 9208 Sport Ultra.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 45mm.
+Grosor: 16 mm.
+Longitud: 260 mm.
+Ancho correa: 24 mm.
+Peso: 170 g.
+Cristal: Mineral reforzado.
+Correa: cuero.
+Características: calendario, cronógrafo, resistente al agua 3 atm.` },
+    { id: 11, sku: "NF8023V", name: "Naviforce N Verde", category: "Sport", images: ["assets/Fotos productos/N verde/8023 verde sin fondo.png", "assets/Fotos productos/N verde/NF Verde 2.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 45mm.
+Grosor: 12mm.
+Longitud: 260 mm.
+Ancho correa: 23 mm.
+Peso: 76 g.
+Cristal: vidrio mineral.
+Correa: PU.
+Cierre: hebilla de gancho.
+Características: calendario, resistente al agua 3 atm.` },
+    { id: 12, sku: "NF8023B", name: "Naviforce N Azúl", category: "Sport", images: ["assets/Fotos productos/N azúl/8023 azul sin fondo.png", "assets/Fotos productos/N azúl/NF Azul.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 45mm.
+Grosor: 12mm.
+Longitud: 260 mm.
+Ancho correa: 23 mm.
+Peso: 76 g.
+Cristal: vidrio mineral.
+Correa: PU.
+Cierre: hebilla de gancho.
+Características: calendario, resistente al agua 3 atm.` },
+    { id: 13, sku: "NF8023K", name: "Naviforce N Negro", category: "Casual", images: ["assets/Fotos productos/N negro/NF Marrón.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 45mm.
+Grosor: 12mm.
+Longitud: 260 mm.
+Ancho correa: 23 mm.
+Peso: 76 g.
+Cristal: vidrio mineral.
+Correa: PU.
+Cierre: hebilla de gancho.
+Características: calendario, resistente al agua 3 atm.` },
+    { id: 14, sku: "GB-PN-01", name: "Pure Noir", category: "Casual", images: ["assets/Fotos productos/Noir/Pure Noir.png"], description: "Totalmente negro. Un diseño audaz para quienes prefieren la elegancia del minimalismo extremo." },
+    { id: 15, sku: "NF8031B", name: "Naviforce Sport", category: "Sport", images: ["assets/Fotos productos/8031 Naviforce Sport/8031 - sin fondo.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 45mm.
+Grosor: 10,5 mm.
+Longitud: 260 mm.
+Ancho correa: 24 mm.
+Peso: 73 g.
+Cristal: vidrio mineral reforzado.
+Correa: silicona.
+Cierre: hebilla de gancho.
+Características: calendario, resistente al agua 3 atm.` },
+    { id: 16, sku: "NF7112K", name: "Naviforce Sport Plus", category: "Sport", images: ["assets/Fotos productos/Naviforce Sport Plus/Naviforce Sport Plus Sin fondo.png"], description: `Movimiento: Seiko.
+Caja: policarbonato.
+Diámetro: 43 mm.
+Grosor: 13 mm.
+Ancho correa: 24 mm.
+Peso: 63 g.
+Cristal: vidrio mineral reforzado.
+Correa: silicona.
+Características: indicadores luminosos (luz blanca), resistente al agua 5 atm.` },
+    { id: 17, sku: "PDG001G", name: "Poedagar Classic", category: "Clásico", images: ["assets/Fotos productos/Poedagar Classic/Poedagar 930 Classic Sin fondo.png"], description: "" },
+    { id: 18, sku: "PDG001K", name: "Poedagar Classic Black", category: "Clásico", images: ["assets/Fotos productos/Poedagar Classic Black/Poedagar Classic Black (v2) sin fondo.png"], description: "El clásico Poedagar en una edición nocturna. Dial negro con indicadores de plata." },
+    { id: 22, sku: "PDG003G", name: "Poedagar Metal", category: "Clásico", images: ["assets/Fotos productos/Poedagar Metal/Poedagar Metal Sin fondo.png"], description: "Construcción íntegra en acero. Un reloj pesado, robusto y con una presencia imponente." },
+    { id: 23, sku: "PDG004G", name: "Poedagar Metal 2", category: "Clásico", images: ["assets/Fotos productos/Poedagar Metal 2/Poedagar Metal 2 sin fondo.png"], description: "Pulido a espejo para un brillo inigualable. El accesorio definitivo para eventos de gala." },
+    { id: 24, sku: "SPH001M", name: "Sapphero", category: "Premium", images: ["assets/Fotos productos/Sapphero/Sapphero.png"], description: "Inspirado en la alta gama internacional. Cristal de zafiro y diseño ergonómico de vanguardia." }
 ];
 
 const productGrid = document.getElementById('product-grid');
@@ -43,7 +161,9 @@ function renderProducts(filteredProducts) {
         card.style.cursor = 'pointer';
         card.onclick = () => window.location.href = `producto.html?id=${product.id}`;
         card.innerHTML = `
-            <div class="image-placeholder product-image"></div>
+            <div class="product-image">
+                ${product.images && product.images[0] ? `<img src="${product.images[0]}" alt="${product.name}">` : '<div class="image-placeholder"></div>'}
+            </div>
             <div class="product-info">
                 <span class="product-category">${product.category}</span>
                 <h3>${product.name}</h3>

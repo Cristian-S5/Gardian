@@ -12,6 +12,13 @@
             gap: 60px;
             align-items: start;
         }
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: sticky;
+            top: 100px;
+        }
         .product-large-image {
             width: 100%;
             aspect-ratio: 1/1;
@@ -20,15 +27,47 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            position: sticky;
-            top: 100px;
+            overflow: hidden;
         }
-        .product-large-image::after {
-            content: 'GB';
-            font-size: 5rem;
-            font-weight: 800;
-            opacity: 0.1;
-            color: #000;
+        .product-large-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .product-thumbnails {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        .product-thumbnails::-webkit-scrollbar {
+            height: 4px;
+        }
+        .product-thumbnails::-webkit-scrollbar-thumb {
+            background: var(--glass-border);
+            border-radius: 10px;
+        }
+        .thumbnail {
+            width: 80px;
+            aspect-ratio: 1/1;
+            background: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+            flex-shrink: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .thumbnail.active {
+            border-color: var(--accent-color);
         }
         .product-detail-info h1 {
             font-size: 3rem;
@@ -50,6 +89,7 @@
             color: var(--text-secondary);
             margin-bottom: 40px;
             line-height: 1.8;
+            white-space: pre-line;
         }
         .price-disclaimer {
             padding: 20px;
@@ -62,7 +102,7 @@
             .product-detail-grid {
                 grid-template-columns: 1fr;
             }
-            .product-large-image {
+            .product-gallery {
                 position: relative;
                 top: 0;
             }
