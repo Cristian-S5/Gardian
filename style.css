@@ -326,10 +326,27 @@ input:focus, textarea:focus, select:focus {
 
 /* Footer */
 footer {
+    position: relative;
+    overflow: hidden;
     padding: 80px 0 40px;
     border-top: 1px solid var(--glass-border);
     background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(22, 22, 22, 0.45)), url('assets/Textura%20GB.png');
     background-size: cover;
+}
+
+.footer-logo-bg {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 0;
+    pointer-events: none;
+}
+
+footer .container {
+    position: relative;
+    z-index: 1;
 }
 
 .footer-content {
