@@ -329,7 +329,6 @@ footer {
     position: relative;
     overflow: hidden;
     padding: 80px 0 40px;
-    border-top: 1px solid var(--glass-border);
     background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(22, 22, 22, 0.45)), url('assets/Textura%20GB.png');
     background-size: cover;
 }
@@ -378,7 +377,6 @@ footer .container {
 .footer-bottom {
     text-align: center;
     padding-top: 40px;
-    border-top: 1px solid var(--glass-border);
     color: var(--text-secondary);
     font-size: 0.9rem;
 }
@@ -467,10 +465,9 @@ footer .container {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 25px 0;
+    padding: 15px 0;
     background: #000;
     margin-top: 0;
-    border-top: 1px solid var(--glass-border);
 }
 
 .developer-credit span {
@@ -479,7 +476,7 @@ footer .container {
 }
 
 .developer-credit img {
-    height: 32px;
+    height: 30px;
     width: auto;
     filter: brightness(0) invert(1);
 }
