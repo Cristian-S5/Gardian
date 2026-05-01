@@ -1,7 +1,7 @@
 const products = [
-    { id: 1, sku: "BT00001", name: "Billetera Marrón", category: "Accesorios", images: ["assets/Fotos productos/Billetera/Billetera Marrón Sin fondo.png", "assets/Fotos productos/Billetera/Captura de pantalla 2025-07-24 220205.png"], description: "Billetera simil cuero para hombre en color marrón con varios compartimentos." },
+    { id: 1, sku: "BT00001", name: "Billetera", category: "Accesorios", images: ["assets/Fotos productos/Billetera/Billetera Marrón Sin fondo.png", "assets/Fotos productos/Billetera/Captura de pantalla 2025-07-24 220205.png"], description: "Billetera simil cuero para hombre en color marrón con varios compartimentos." },
     { id: 2, sku: "BE00003", name: "Brazalete vintage", category: "Accesorios", images: ["assets/Fotos productos/Brazalete vintage/Pulsera cuero 3.png", "assets/Fotos productos/Brazalete vintage/Pulsera de eco-cuero.png"], description: "Brazalete vintage simil cuero con enchapados" },
-    { id: 3, sku: "NF9248B", name: "Naviforce N2", category: "Sport", images: ["assets/Fotos productos/9248/Naviforce 9248.png"], description: `🚚 Envíos a todo el país
+    { id: 3, sku: "NF9248B", name: "Naviforce N2", category: "Casual", images: ["assets/Fotos productos/9248/Naviforce 9248.png"], description: `🚚 Envíos a todo el país
 🏅 1 año de garantía
 💳 Todos los métodos de pago
 
@@ -44,7 +44,16 @@ Peso: 120 g.
 Cristal: vidrio mineral reforzado.
 Cierre: hebilla de gancho.
 Características: calendario, cronógrafo, resistente al agua 3 atm.` },
-    { id: 7, sku: "NF8051G", name: "Naviforce Gold", category: "Premium", images: ["assets/Fotos productos/8051S/Naviforce 8051S.png", "assets/Fotos productos/8051S/reloj_sin_logo.png"], description: `Movimiento: Seiko.
+    { id: 7, sku: "NF8051G", name: "Naviforce Gold", category: "Premium", images: ["assets/Fotos productos/8051S/Naviforce 8051S.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 44 mm.
+Grosor: 13 mm.
+Ancho correa: 26 mm.
+Peso: 163 g.
+Cristal: cristal mineral reforzado.
+Correa: acero inoxidable.
+Características: calendario, cronógrafo, resistente al agua 3 atm.` },
+    { id: 25, sku: "NF8051Z", name: "Naviforce Silver", category: "Premium", images: ["assets/Fotos productos/8051S/reloj_sin_logo.png"], description: `Movimiento: Seiko.
 Caja: aleación de zinc.
 Diámetro: 44 mm.
 Grosor: 13 mm.
@@ -82,7 +91,7 @@ Peso: 170 g.
 Cristal: Mineral reforzado.
 Correa: cuero.
 Características: calendario, cronógrafo, resistente al agua 3 atm.` },
-    { id: 11, sku: "NF8023V", name: "Naviforce N Verde", category: "Sport", images: ["assets/Fotos productos/N verde/8023 verde sin fondo.png", "assets/Fotos productos/N verde/NF Verde 2.png"], description: `Movimiento: Seiko.
+    { id: 11, sku: "NF8023V", name: "Naviforce N Verde", category: "Casual", images: ["assets/Fotos productos/N verde/8023 verde sin fondo.png", "assets/Fotos productos/N verde/NF Verde 2.png"], description: `Movimiento: Seiko.
 Caja: aleación de zinc.
 Diámetro: 45mm.
 Grosor: 12mm.
@@ -93,7 +102,7 @@ Cristal: vidrio mineral.
 Correa: PU.
 Cierre: hebilla de gancho.
 Características: calendario, resistente al agua 3 atm.` },
-    { id: 12, sku: "NF8023B", name: "Naviforce N Azúl", category: "Sport", images: ["assets/Fotos productos/N azúl/8023 azul sin fondo.png", "assets/Fotos productos/N azúl/NF Azul.png"], description: `Movimiento: Seiko.
+    { id: 12, sku: "NF8023B", name: "Naviforce N Azúl", category: "Casual", images: ["assets/Fotos productos/N azúl/8023 azul sin fondo.png", "assets/Fotos productos/N azúl/NF Azul.png"], description: `Movimiento: Seiko.
 Caja: aleación de zinc.
 Diámetro: 45mm.
 Grosor: 12mm.
@@ -105,6 +114,17 @@ Correa: PU.
 Cierre: hebilla de gancho.
 Características: calendario, resistente al agua 3 atm.` },
     { id: 13, sku: "NF8023K", name: "Naviforce N Negro", category: "Casual", images: ["assets/Fotos productos/N negro/NF Marrón.png"], description: `Movimiento: Seiko.
+Caja: aleación de zinc.
+Diámetro: 45mm.
+Grosor: 12mm.
+Longitud: 260 mm.
+Ancho correa: 23 mm.
+Peso: 76 g.
+Cristal: vidrio mineral.
+Correa: PU.
+Cierre: hebilla de gancho.
+Características: calendario, resistente al agua 3 atm.` },
+    { id: 26, sku: "NF8023E", name: "Naviforce N Beige", category: "Casual", images: ["assets/Fotos productos/N Beige/Naviforce 8023.png"], description: `Movimiento: Seiko.
 Caja: aleación de zinc.
 Diámetro: 45mm.
 Grosor: 12mm.
@@ -137,10 +157,10 @@ Cristal: vidrio mineral reforzado.
 Correa: silicona.
 Características: indicadores luminosos (luz blanca), resistente al agua 5 atm.` },
     { id: 17, sku: "PDG001G", name: "Poedagar Classic", category: "Clásico", images: ["assets/Fotos productos/Poedagar Classic/Poedagar 930 Classic Sin fondo.png"], description: "" },
-    { id: 18, sku: "PDG001K", name: "Poedagar Classic Black", category: "Clásico", images: ["assets/Fotos productos/Poedagar Classic Black/Poedagar Classic Black (v2) sin fondo.png"], description: "El clásico Poedagar en una edición nocturna. Dial negro con indicadores de plata." },
-    { id: 22, sku: "PDG003G", name: "Poedagar Metal", category: "Clásico", images: ["assets/Fotos productos/Poedagar Metal/Poedagar Metal Sin fondo.png"], description: "Construcción íntegra en acero. Un reloj pesado, robusto y con una presencia imponente." },
-    { id: 23, sku: "PDG004G", name: "Poedagar Metal 2", category: "Clásico", images: ["assets/Fotos productos/Poedagar Metal 2/Poedagar Metal 2 sin fondo.png"], description: "Pulido a espejo para un brillo inigualable. El accesorio definitivo para eventos de gala." },
-    { id: 24, sku: "SPH001M", name: "Sapphero", category: "Premium", images: ["assets/Fotos productos/Sapphero/Sapphero.png"], description: "Inspirado en la alta gama internacional. Cristal de zafiro y diseño ergonómico de vanguardia." }
+    { id: 18, sku: "PDG001K", name: "Poedagar Classic Black", category: "Clásico", images: ["assets/Fotos productos/Poedagar Classic Black/Poedagar Classic Black (v2) sin fondo.png"], description: "" },
+    { id: 22, sku: "PDG003G", name: "Poedagar Metal", category: "Clásico", images: ["assets/Fotos productos/Poedagar Metal/Poedagar Metal Sin fondo.png"], description: "" },
+    { id: 23, sku: "PDG004G", name: "Poedagar Metal 2", category: "Clásico", images: ["assets/Fotos productos/Poedagar Metal 2/Poedagar Metal 2 sin fondo.png"], description: "" },
+    { id: 24, sku: "SPH001M", name: "Sapphero", category: "Premium", images: ["assets/Fotos productos/Sapphero/Sapphero.png"], description: "" }
 ];
 
 const productGrid = document.getElementById('product-grid');
