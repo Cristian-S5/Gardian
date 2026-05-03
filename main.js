@@ -44,6 +44,44 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
+// News Slider Logic
+const newsTrack = document.getElementById('news-track');
+const newsDots = document.querySelectorAll('#news-dots .dot');
+let currentSlide = 0;
+const totalSlides = document.querySelectorAll('.news-slide').length;
+
+if (newsTrack && totalSlides > 0) {
+    function updateSlider() {
+        newsTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+        newsDots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlider();
+    }
+
+    // Auto slide every 5 seconds
+    let sliderInterval = setInterval(nextSlide, 5000);
+
+    // Pause on hover
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    if (sliderWrapper) {
+        sliderWrapper.addEventListener('mouseenter', () => clearInterval(sliderInterval));
+        sliderWrapper.addEventListener('mouseleave', () => sliderInterval = setInterval(nextSlide, 5000));
+    }
+
+    // Dot clicks
+    newsDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            updateSlider();
+        });
+    });
+}
+
 // Form submission handler (mock)
 const forms = document.querySelectorAll('form');
 forms.forEach(form => {
