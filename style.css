@@ -202,13 +202,33 @@ nav.scrolled {
     background-position: center;
 }
 
+.hero .container {
+    max-width: 1400px;
+}
+
 .hero-content {
-    max-width: 700px;
+    width: 100%;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px; /* Increased gap */
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 700px;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 220px;
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     line-height: 1.1;
     margin-bottom: 20px;
     font-weight: 700;
@@ -539,6 +559,23 @@ footer .container {
         font-size: 1.5rem;
     }
     
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-btns {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
     .hero h1 {
         font-size: 3rem;
     }
