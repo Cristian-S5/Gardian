@@ -153,7 +153,8 @@ nav.scrolled {
     letter-spacing: 1px;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--accent-color);
 }
 
@@ -197,7 +198,7 @@ nav.scrolled {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url('assets/Textura%20GB.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/Textura%20GB.png');
     background-size: cover;
     background-position: center;
 }
@@ -212,7 +213,8 @@ nav.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px; /* Increased gap */
+    gap: 100px;
+    /* Increased gap */
 }
 
 .hero-text {
@@ -242,7 +244,8 @@ nav.scrolled {
 
 /* News Slider */
 #news-slider {
-    margin-top: -80px; /* More overlap for a bigger slider */
+    margin-top: -80px;
+    /* More overlap for a bigger slider */
     margin-bottom: 80px;
     position: relative;
     z-index: 5;
@@ -254,7 +257,7 @@ nav.scrolled {
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .slider-container {
@@ -269,7 +272,8 @@ nav.scrolled {
 
 .news-slide {
     min-width: 100%;
-    height: 500px; /* 2x bigger (previously 250px) */
+    height: 500px;
+    /* 2x bigger (previously 250px) */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,7 +291,7 @@ nav.scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
     z-index: 1;
 }
 
@@ -344,7 +348,9 @@ nav.scrolled {
     font-size: 0.9rem;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 15px;
     background: var(--surface-color);
@@ -355,7 +361,9 @@ input, textarea, select {
     transition: var(--transition);
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
     outline: none;
     border-color: var(--accent-color);
     box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.1);
@@ -418,7 +426,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .product-category {
-    display: none; /* Hide category in card as per user image */
+    display: none;
+    /* Hide category in card as per user image */
 }
 
 /* Filters */
@@ -450,15 +459,17 @@ footer {
     position: relative;
     overflow: hidden;
     padding: 80px 0 40px;
-    background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(22, 22, 22, 0.45)), url('assets/Textura%20GB.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/Textura%20GB.png');
     background-size: cover;
 }
 
 .footer-logo {
-    height: 150px; /* 2.5x of previous 60px */
+    height: 150px;
+    /* 2.5x of previous 60px */
     width: auto;
     display: block;
-    margin-left: auto; /* Push to the right in its container */
+    margin-left: auto;
+    /* Push to the right in its container */
     filter: brightness(0) invert(1);
     opacity: 0.9;
 }
@@ -483,7 +494,8 @@ footer .container {
     letter-spacing: 1px;
 }
 
-.footer-info p, .footer-info a {
+.footer-info p,
+.footer-info a {
     color: var(--text-secondary);
     text-decoration: none;
     display: block;
@@ -558,7 +570,7 @@ footer .container {
     .nav-links a {
         font-size: 1.5rem;
     }
-    
+
     .hero-content {
         flex-direction: column;
         text-align: center;
