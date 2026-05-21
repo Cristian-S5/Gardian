@@ -148,7 +148,7 @@ nav.scrolled {
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
-    font-size: 0.9rem;
+    font-size: 1.17rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -568,7 +568,7 @@ footer .container {
     }
 
     .nav-links a {
-        font-size: 1.5rem;
+        font-size: 1.95rem;
     }
 
     .hero-content {
