@@ -446,6 +446,15 @@ select:focus {
     text-align: center;
 }
 
+.product-price {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+}
+
 .product-category {
     display: none;
     /* Hide category in card as per user image */

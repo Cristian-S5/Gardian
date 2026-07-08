@@ -187,6 +187,7 @@ function renderProducts(filteredProducts) {
             <div class="product-info">
                 <span class="product-category">${product.category}</span>
                 <h3>${product.name}</h3>
+                <span class="product-price">$XXXX</span>
             </div>
         `;
         productGrid.appendChild(card);

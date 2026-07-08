@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="category-badge">${product.category}</div>
             <h1>${product.name}</h1>
             <span class="product-sku">SKU: ${product.sku}</span>
+            <span class="product-detail-price" style="font-size: 2.2rem; font-weight: 700; color: var(--accent-color); margin: 15px 0 20px 0; display: block;">$XXXX</span>
             <p class="product-description">${product.description}</p>
             
             <div class="price-disclaimer">
@@ -51,17 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                <a href="https://wa.me/message/KRH65KV4KNABA1?text=Hola!%20Me%20interesa%20el%20modelo%20${encodeURIComponent(product.name)}" target="_blank" class="btn btn-primary">Consultar por WhatsApp</a>
-                <a href="empresas.html" class="btn btn-outline">Solicitar Catálogo</a>
-            </div>
-            
-            <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--glass-border);">
-                <h4 style="margin-bottom: 20px;">Características</h4>
-                <ul style="list-style: none; color: var(--text-secondary);">
-                    <li style="margin-bottom: 10px;">• Garantía oficial</li>
-                    <li style="margin-bottom: 10px;">• Packaging exclusivo</li>
-                    <li style="margin-bottom: 10px;">• Importación directa</li>
-                </ul>
+                <a href="https://www.gardianbaz.com/" target="_blank" class="btn btn-primary">Comprar</a>
             </div>
         </div>
     `;
