@@ -745,3 +745,22 @@ footer .container {
     font-weight: 500;
     display: block;
 }
+
+/* Banners Home & Modelos */
+.banner-slide-1 {
+    background-image: url('assets/Banners%20Web/Banner%201%20Desktop.png');
+}
+
+.banner-slide-2 {
+    background-image: url('assets/Banners%20Web/Banner%202%20Desktop.png');
+}
+
+@media (max-width: 768px) {
+    .banner-slide-1 {
+        background-image: url('assets/Banners%20Web/Banner%201%20mobile-04.png');
+    }
+    
+    .banner-slide-2 {
+        background-image: url('assets/Banners%20Web/Banner%202%20mobile-03.png');
+    }
+}
