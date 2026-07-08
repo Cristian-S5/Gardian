@@ -69,14 +69,37 @@ if (newsTrack && totalSlides > 0) {
         updateSlider();
     }
 
-    // Auto slide every 5 seconds
-    let sliderInterval = setInterval(nextSlide, 5000);
+    // Auto slide every 3 seconds
+    let sliderInterval = setInterval(nextSlide, 3000);
 
-    // Pause on hover
+    // Pause on hover (desktop) and handle swipe (mobile)
     const sliderWrapper = document.querySelector('.slider-wrapper');
     if (sliderWrapper) {
+        // Hover pause
         sliderWrapper.addEventListener('mouseenter', () => clearInterval(sliderInterval));
-        sliderWrapper.addEventListener('mouseleave', () => sliderInterval = setInterval(nextSlide, 5000));
+        sliderWrapper.addEventListener('mouseleave', () => sliderInterval = setInterval(nextSlide, 3000));
+
+        // Swipe handling
+        let touchStartX = 0;
+        sliderWrapper.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+        sliderWrapper.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchEndX - touchStartX;
+            if (Math.abs(diff) > 50) {
+                clearInterval(sliderInterval);
+                if (diff < 0) {
+                    nextSlide(); // swipe left -> next
+                } else {
+                    // previous slide
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateSlider();
+                }
+                // Restart auto slide
+                sliderInterval = setInterval(nextSlide, 3000);
+            }
+        });
     }
 
     // Dot clicks
