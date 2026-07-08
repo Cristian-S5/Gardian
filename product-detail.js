@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="product-detail-price" style="font-size: 2.2rem; font-weight: 700; color: var(--accent-color); margin: 15px 0 20px 0; display: block;">$XXXX</span>
             <p class="product-description">${product.description}</p>
             
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <a href="https://www.gardianbaz.com/" target="_blank" class="btn btn-primary" style="margin-bottom: 15px;">Comprar</a>
+            </div>
+
             <div class="price-disclaimer">
                 <h4 style="color: var(--accent-color); margin-bottom: 10px;">Venta Mayorista</h4>
                 <p style="font-size: 0.9rem; color: var(--text-secondary);">Para conocer precios mayoristas y disponibilidad de stock para tu negocio, por favor contactanos indicando este modelo.</p>
-            </div>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                <a href="https://www.gardianbaz.com/" target="_blank" class="btn btn-primary">Comprar</a>
             </div>
         </div>
     `;
