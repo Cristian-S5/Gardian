@@ -748,19 +748,19 @@ footer .container {
 
 /* Banners Home & Modelos */
 .banner-slide-1 {
-    background-image: url('assets/Banners%20web/Banner%201%20Desktop.png') !important;
+    background-image: url('assets/Banners%20web/Banner1Desktop.png') !important;
 }
 
 .banner-slide-2 {
-    background-image: url('assets/Banners%20web/Banner%202%20Desktop.png') !important;
+    background-image: url('assets/Banners%20web/Banner2Desktop.png') !important;
 }
 
 @media (max-width: 768px) {
     .banner-slide-1 {
-        background-image: url('assets/Banners%20web/Banner%201%20mobile-04.png') !important;
+        background-image: url('assets/Banners%20web/Banner1mobile.png') !important;
     }
     
     .banner-slide-2 {
-        background-image: url('assets/Banners%20web/Banner%202%20mobile-03.png') !important;
+        background-image: url('assets/Banners%20web/Banner2mobile.png') !important;
     }
 }
