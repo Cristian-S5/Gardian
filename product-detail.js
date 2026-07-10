@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return `$${Number(price).toLocaleString('es-UY')}`;
     };
 
+    const buyUrl = product.buyUrl || 'https://www.gardianbaz.com/';
+
     // Render Product Detail
     detailContainer.innerHTML = `
         <div class="product-gallery">
@@ -55,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="product-description">${product.description}</p>
             
             <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                <a href="https://www.gardianbaz.com/" target="_blank" class="btn btn-primary" style="margin-bottom: 15px;">Comprar</a>
+                <a href="${buyUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-bottom: 15px;">Comprar</a>
             </div>
 
             <div class="price-disclaimer">
