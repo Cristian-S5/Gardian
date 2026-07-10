@@ -21,6 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update Page Title
     document.title = `${product.name} | Gardian Baz`;
 
+    const formatPrice = (price) => {
+        if (price === null || price === undefined || price === '') {
+            return '$XXXX';
+        }
+
+        return `$${Number(price).toLocaleString('es-UY')}`;
+    };
+
     // Render Product Detail
     detailContainer.innerHTML = `
         <div class="product-gallery">
@@ -43,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="category-badge">${product.category}</div>
             <h1>${product.name}</h1>
             <span class="product-sku">SKU: ${product.sku}</span>
-            <span class="product-detail-price" style="font-size: 2.2rem; font-weight: 700; color: var(--accent-color); margin: 15px 0 20px 0; display: block;">$XXXX</span>
+            <span class="product-detail-price" style="font-size: 2.2rem; font-weight: 700; color: var(--accent-color); margin: 15px 0 20px 0; display: block;">${formatPrice(product.price)}</span>
             <p class="product-description">${product.description}</p>
             
             <div style="display: flex; gap: 20px; flex-wrap: wrap;">
