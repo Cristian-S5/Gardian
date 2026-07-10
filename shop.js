@@ -1,6 +1,6 @@
 const products = [
-    { id: 1, sku: "BT00001", name: "Billetera", category: "Accesorios", price: 1200, images: ["assets/Fotos productos/Billetera/Billetera Marrón Sin fondo.png", "assets/Fotos productos/Billetera/Captura de pantalla 2025-07-24 220205.png"], description: "Billetera simil cuero para hombre en color marrón con varios compartimentos." },
-    { id: 2, sku: "BE00003", name: "Brazalete vintage", category: "Accesorios", price: 1400, images: ["assets/Fotos productos/Brazalete vintage/Pulsera cuero 3.png", "assets/Fotos productos/Brazalete vintage/Pulsera de eco-cuero.png"], description: "Brazalete vintage simil cuero con enchapados" },
+    { id: 1, sku: "BT00001", name: "Billetera", category: "Accesorios", price: 750, images: ["assets/Fotos productos/Billetera/Billetera Marrón Sin fondo.png", "assets/Fotos productos/Billetera/Captura de pantalla 2025-07-24 220205.png"], description: "Billetera simil cuero para hombre en color marrón con varios compartimentos." },
+    { id: 2, sku: "BE00003", name: "Brazalete vintage", category: "Accesorios", price: 179, images: ["assets/Fotos productos/Brazalete vintage/Pulsera cuero 3.png", "assets/Fotos productos/Brazalete vintage/Pulsera de eco-cuero.png"], description: "Brazalete vintage simil cuero con enchapados" },
     { id: 3, sku: "NF9248B", name: "Naviforce N2", category: "Casual", price: 1600, images: ["assets/Fotos productos/9248/Naviforce 9248.png"], description: `🚚 Envíos a todo el país
 🏅 1 año de garantía
 💳 Todos los métodos de pago
