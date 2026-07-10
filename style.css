@@ -837,12 +837,12 @@ footer .container {
 
 .features-banner {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     padding: 20px;
     z-index: 2; /* To appear above the ::before overlay */
 }
@@ -853,7 +853,7 @@ footer .container {
     align-items: center;
     text-align: center;
     gap: 15px;
-    flex: 1;
+    flex: 0 1 300px;
     min-width: 250px;
 }
 
@@ -865,6 +865,25 @@ footer .container {
     color: var(--text-primary);
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .news-slide.banner-slide-3 {
+        height: auto;
+        min-height: 450px;
+        padding: 40px 20px;
+    }
+    .features-banner {
+        gap: 30px;
+        padding: 10px;
+    }
+    .feature-item {
+        min-width: 220px;
+        flex: 0 1 280px;
+    }
+    .feature-item h3 {
+        font-size: 1.25rem;
+    }
 }
 
 /* Showroom & Contact Layout Customizations */
