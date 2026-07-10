@@ -1,4 +1,4 @@
-﻿// Navbar scroll effect
+// Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -123,7 +123,7 @@ forms.forEach(form => {
         button.disabled = true;
 
         setTimeout(() => {
-            button.innerText = 'Â¡Enviado con Ã©xito!';
+            button.innerText = '¡Enviado con éxito!';
             button.style.backgroundColor = '#4CAF50';
             form.reset();
             
