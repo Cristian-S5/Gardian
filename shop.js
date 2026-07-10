@@ -1,4 +1,4 @@
-const products = [
+﻿const products = [
     { id: 1, sku: "BT00001", name: "Billetera", category: "Accesorios", price: 750, buyUrl: "https://mpago.la/1qnFSxe", images: ["assets/Fotos productos/Billetera/Billetera Marrón Sin fondo.png", "assets/Fotos productos/Billetera/Captura de pantalla 2025-07-24 220205.png"], description: "Billetera simil cuero para hombre en color marrón con varios compartimentos." },
     { id: 2, sku: "BE00003", name: "Brazalete vintage", category: "Accesorios", price: 179, buyUrl: "https://mpago.la/1kuVcxu", images: ["assets/Fotos productos/Brazalete vintage/Pulsera cuero 3.png", "assets/Fotos productos/Brazalete vintage/Pulsera de eco-cuero.png"], description: "Brazalete vintage simil cuero con enchapados" },
     {
@@ -194,7 +194,7 @@ function renderProducts(filteredProducts) {
         const card = document.createElement('div');
         card.className = 'product-card reveal active';
         card.style.cursor = 'pointer';
-        card.onclick = () => window.location.href = `producto.html?id=${product.id}`;
+        card.onclick = () => window.location.href = `producto?id=${product.id}`;
         card.innerHTML = `
             <div class="product-image">
                 ${product.images && product.images[0] ? `<img src="${product.images[0]}" alt="${product.name}">` : '<div class="image-placeholder"></div>'}

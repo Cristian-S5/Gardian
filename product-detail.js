@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     const detailContainer = document.getElementById('product-detail');
     
     // Get product ID from URL
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const productId = parseInt(urlParams.get('id'));
 
     if (!productId) {
-        window.location.href = 'tienda.html';
+        window.location.href = 'tienda';
         return;
     }
 
