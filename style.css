@@ -803,28 +803,28 @@ footer .container {
 
 /* Banners Quiero revender */
 .empresas-slide-1 {
-    background-image: url('assets/Banners%20web/EmpresasBanner1Desktop.png') !important;
+    background-image: url('assets/Banners%20web/Banners_revendedores/Banner_desktop1.png') !important;
 }
 
 .empresas-slide-2 {
-    background-image: url('assets/Banners%20web/EmpresasBanner2Desktop.png') !important;
+    background-image: url('assets/Banners%20web/Banners_revendedores/Banner_desktop2.png') !important;
 }
 
 .empresas-slide-3 {
-    background-image: url('assets/Banners%20web/EmpresasBanner3Desktop.png') !important;
+    background-image: url('assets/Banners%20web/Banners_revendedores/Banner_desktop3.png') !important;
 }
 
 @media (max-width: 768px) {
     .empresas-slide-1 {
-        background-image: url('assets/Banners%20web/EmpresasBanner1mobile.png') !important;
+        background-image: url('assets/Banners%20web/Banners_revendedores/Banner_mobile1.png') !important;
     }
     
     .empresas-slide-2 {
-        background-image: url('assets/Banners%20web/EmpresasBanner2mobile.png') !important;
+        background-image: url('assets/Banners%20web/Banners_revendedores/Banner_mobile2.png') !important;
     }
 
     .empresas-slide-3 {
-        background-image: url('assets/Banners%20web/EmpresasBanner3mobile.png') !important;
+        background-image: url('assets/Banners%20web/Banners_revendedores/Banner_mobile3.png') !important;
     }
 }
 
