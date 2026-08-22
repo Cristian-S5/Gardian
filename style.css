@@ -675,9 +675,11 @@ footer .container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 15px;
     }
+
     .product-card {
         padding: 12px;
     }
+
     .product-info h3 {
         font-size: 0.85rem;
     }
@@ -784,7 +786,10 @@ footer .container {
 
 /* Banners Home & Modelos */
 .banner-slide-1 {
-    background-image: url('assets/Banners%20web/Banner1Desktop.png') !important;
+    background-image: url('assets/Banners%20web/Banner_web_agosto_desktop.png?v=3') !important;
+    background-size: 105% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
 }
 
 .banner-slide-2 {
@@ -793,9 +798,12 @@ footer .container {
 
 @media (max-width: 768px) {
     .banner-slide-1 {
-        background-image: url('assets/Banners%20web/Banner1mobile.png') !important;
+        background-image: url('assets/Banners%20web/Banner_web_agosto_mobile.png?v=3') !important;
+        background-size: 105% !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
     }
-    
+
     .banner-slide-2 {
         background-image: url('assets/Banners%20web/Banner2mobile.png') !important;
     }
@@ -818,7 +826,7 @@ footer .container {
     .empresas-slide-1 {
         background-image: url('assets/Banners%20web/Banners_revendedores/Banner_mobile1.png') !important;
     }
-    
+
     .empresas-slide-2 {
         background-image: url('assets/Banners%20web/Banners_revendedores/Banner_mobile2.png') !important;
     }
@@ -844,7 +852,8 @@ footer .container {
     flex-wrap: wrap;
     gap: 40px;
     padding: 20px;
-    z-index: 2; /* To appear above the ::before overlay */
+    z-index: 2;
+    /* To appear above the ::before overlay */
 }
 
 .feature-item {
@@ -873,14 +882,17 @@ footer .container {
         min-height: 450px;
         padding: 40px 20px;
     }
+
     .features-banner {
         gap: 30px;
         padding: 10px;
     }
+
     .feature-item {
         min-width: 220px;
         flex: 0 1 280px;
     }
+
     .feature-item h3 {
         font-size: 1.25rem;
     }
@@ -898,7 +910,7 @@ footer .container {
     height: 350px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     border: 1px solid var(--glass-border);
 }
@@ -907,7 +919,7 @@ footer .container {
     position: absolute;
     bottom: 15px;
     right: 15px;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     color: var(--text-primary);
     padding: 8px 16px;
     border-radius: 50px;
@@ -932,9 +944,8 @@ footer .container {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .map-container {
         height: 300px;
     }
 }
-
