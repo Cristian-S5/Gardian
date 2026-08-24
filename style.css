@@ -510,7 +510,7 @@ footer .container {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 1.1fr 1fr 0.9fr;
+    grid-template-columns: 1fr 1fr 1.1fr;
     gap: 48px;
     margin-bottom: 44px;
     align-items: start;
@@ -520,8 +520,20 @@ footer .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 14px;
     max-width: 320px;
+    order: 3;
+    justify-self: end;
+}
+
+.footer-content > :nth-child(2) {
+    order: 1;
+}
+
+.footer-content > :nth-child(3) {
+    order: 2;
 }
 
 .footer-brand p {
@@ -663,6 +675,9 @@ footer .container {
 
     .footer-brand {
         max-width: none;
+        align-items: center;
+        text-align: center;
+        justify-self: center;
     }
 
     .footer-brand p {
